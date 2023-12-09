@@ -1,0 +1,513 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+}
+
+body {
+	font-family: Arial;
+	background-color: rgb(0 1 0);
+	color: white;
+}
+
+.navigasi {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem 7%;
+	background-color: transparent;
+	border-bottom: 2px solid chocolate;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+}
+
+.navigasi .logo {
+	font-size: 2rem;
+	font-weight: 700;
+	color: white;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+.navigasi .logo span {
+	color: chocolate;
+	text-transform: uppercase;
+}
+
+.navigasi .navigasi-nav a {
+	text-transform: capitalize;
+	color: white;
+	display: inline-block;
+	font-size: 1.7rem;
+	font-weight: bold;
+	margin: 0 1rem;
+	transition: 0.5s;
+}
+
+.navigasi .navigasi-nav a:hover {
+	color: chocolate;
+}
+
+.navigasi .navigasi-nav a::after {
+	content: '';
+	display: block;
+	padding-bottom: 0.5rem;
+	border-bottom: 0.2rem solid chocolate;
+	transform: scaleX(0);
+	transition: 0.2s linear;
+}
+
+.navigasi .navigasi-nav a:hover::after {
+	transform: scaleX(0.5);
+}
+
+.navigasi .humberger a {
+	color: white;
+	font-size: 3rem;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.navigasi .humberger a:hover {
+	color: chocolate;
+}
+
+#humberger-menu {
+	display: none;
+}
+
+.hero {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background-image: url(../img/kopi4.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.hero ::after {
+	content: '';
+	display: block;
+	position: absolute;
+	color: chocolate;
+	height: 30%;
+	bottom: 0;
+	background: linear-gradient(0deg, chocolate);
+}
+
+.hero .content {
+	padding: 1rem;
+	max-width: 60rem;
+}
+
+.hero .content h1 {
+	font-family: Arial;
+	font-size: 3.8rem;
+	text-transform: uppercase;
+}
+
+.hero .content span {
+	color: chocolate;
+}
+
+.hero .content p {
+	font-family: Arial;
+	font-size: 1.6rem;
+	margin-top: 0.5rem;
+	text-transform: capitalize;
+}
+
+.hero .content a {
+	margin-top: 5rem;
+	display: inline-block;
+	border: 2px solid white;
+	font-family: Arial;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+	background-color: chocolate;
+	padding: 1rem 2rem;
+	margin-left: 7.5rem;
+	border-radius: 1rem;
+	transition: 0.5s;
+}
+
+.hero .content a:hover {
+	transform: scaleX(1.12);
+	background-color: white;
+	color: chocolate;
+}
+
+.about {
+	padding: 6.8rem 7%;
+}
+
+.about h2 {
+	font-family: Arial;
+	font-size: 2.6rem;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.about h2 span {
+	color: chocolate;
+}
+
+.about .tentang {
+	display: flex;
+	padding: 3rem;
+	text-align: center;
+}
+
+.about .tentang img {
+	border: 2px solid white;
+	width: 600px;
+	height: 300px;
+	border-radius: 50px 5px;
+	cursor: pointer;
+	transition: 0.5s ease;
+}
+
+.about .tentang img:hover {
+	border-color: chocolate;
+	transform: scale(1.05);
+}
+
+.about .tentang p {
+	font-family: Arial;
+	font-size: 1.1rem;
+	line-height: 1.6em;
+}
+
+.about .tentang span {
+	color: chocolate;
+	text-transform: uppercase;
+}
+
+.menu {
+	padding: 6.8rem 7%;
+	text-align: center;
+}
+
+.menu h2 {
+	font-family: Arial;
+	font-size: 2.6rem;
+	text-transform: capitalize;
+}
+
+.menu h2 span {
+	color: chocolate;
+}
+
+.menu p {
+	font-family: Arial;
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	margin-bottom: 4rem;
+}
+
+.menu p span {
+	color: chocolate;
+	text-transform: uppercase;
+}
+
+.menu .menucafe {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu .menucafe .menu1 {
+	margin: auto;
+	border: 2px solid chocolate;
+	max-width: 18rem;
+	padding: 2rem 2rem;
+	border-radius: 2rem;
+	background-color: #1f242d;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+
+.menu .menucafe .menu1:hover {
+	transform: scale(1.05);
+	border-color: white;
+}
+
+.menu .menucafe .menu1 img {
+	width: 13rem;
+	margin-bottom: 0.5rem;
+	border-radius: 1rem;
+}
+
+.menu .menucafe .menu1 .nama {
+	font-family: arial;
+	font-size: 2rem;
+	font-weight: bold;
+	color: chocolate;
+	text-transform: capitalize;
+	margin-bottom: 2.5rem;
+}
+
+.menu .menucafe .menu1 h3 {
+	font-size: 2rem;
+	font-family: arial;
+	text-transform: uppercase;
+	color: chocolate;
+}
+
+.menu .menucafe .menu1 p {
+	font-size: 2rem;
+	font-family: arial;
+	text-transform: uppercase;
+	color: chocolate;
+	line-height: 0;
+	margin-top: 1.5rem;
+}
+
+.menu .menucafe .menu1 a {
+	font-size: 1rem;
+	font-weight: bold;
+	color: white;
+	border: 2px solid white;
+	padding: 1rem 2rem;
+	background-color: chocolate;
+	border-radius: 1rem;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+.menu .menucafe .menu1 a:hover {
+	border-color: chocolate;
+	background-color: white;
+	color: chocolate;
+}
+
+.kontak {
+	padding: 6.8rem 7%;
+}
+
+.kontak h2 {
+	font-size: 2.6rem;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.kontak h2 span {
+	color: chocolate;
+}
+
+.kontak .kontak1 {
+	display: flex;
+	margin-top: 3rem;
+	background-color: chocolate;
+}
+
+.kontak .kontak1 .map {
+	flex: 1 1 45rem;
+	width: 100%;
+	object-fit: cover;
+}
+
+.kontak .kontak1 form {
+	flex: 1 1 45rem;
+	padding: 5rem 2rem;
+	text-align: center;
+}
+
+.kontak .kontak1 form .input-group {
+	display: flex;
+	align-items: center;
+	margin-top: 2rem;
+	border: 1px solid white;
+	padding-left: 2rem;
+}
+
+.kontak .kontak1 form .input-group input {
+	width: 100%;
+	padding: 1.5rem;
+	font-size: 1rem;
+	background-color: white;
+	color: chocolate;
+}
+
+.kontak .kontak1 form .btn {
+	border-radius: 1.5rem;
+	border: 2px solid chocolate;
+	margin-top: 3rem;
+	display: inline-block;
+	padding: 1rem 2rem;
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: chocolate;
+	background-color: white;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.kontak .kontak1 form .btn:hover {
+	transform: scaleX(1.12);
+}
+
+footer {
+	padding: 1rem 7%;
+	background-color: chocolate;
+	text-align: center;
+	display: block;
+	align-items: center;
+	justify-content: center;
+}
+
+footer .sosialmedia a {
+	color: white;
+	font-size: 2.5rem;
+	margin: 0 1rem;
+}
+
+footer .sosialmedia a:hover {
+	color: black;
+}
+
+footer .links {
+	margin-top: 0.5rem;
+}
+
+footer .links a {
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: white;
+	margin: 0 1rem;
+}
+
+footer .links a:hover {
+	color: black;
+}
+
+footer .creadit p {
+	margin-top: 1rem;
+	font-size: 1.3rem;
+	text-transform: capitalize;
+}
+
+
+@media (max-width: 1920px) {
+	html {
+		font-size: 100%;
+	}
+}
+
+@media (max-width: 1366px) {
+	html {
+		font-size: 100%;
+	}
+}
+
+@media (max-width: 1200px) {
+	html {
+		font-size: 85%;
+	}
+}
+
+@media (max-width: 992px) {
+	html {
+		font-size: 75%;
+	}
+
+	.about .tentang p {
+		margin-left: 2rem;
+	}
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 63%;
+	}
+
+	#humberger-menu {
+		display: inline-block;
+	}
+
+	.navigasi .navigasi-nav {
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		background-color: white;
+		width: 25rem;
+		height: 100vh;
+		transition: 0.2s;
+	}
+
+	.navigasi .navigasi-nav.active {
+		right: 0;
+	}
+
+	.navigasi .navigasi-nav a {
+		color: black;
+		display: block;
+		padding: 0.7rem;
+		font-size: 1.7rem;
+		font-weight: bold;
+	}
+
+	.navigasi .navigasi-nav a::after {
+		transform-origin: 0 0;
+	}
+
+	.navigasi .navigasi-nav a:hover::after {
+		transform: scaleX(0.2);
+		transition: 0.2s;
+	}
+
+	.about .tentang {
+		flex-wrap: wrap;
+	}
+
+	.about .tentang img {
+		margin: auto;
+		width: 400px;
+		height: 200px;
+		object-fit: cover;
+		object-position: center;
+		margin-bottom: 1rem;
+	}
+
+	.about .tentang p {
+		margin-top: 1.5rem;
+	}
+
+	.menu .menucafe .menu1 {
+		max-width: 25rem;
+		margin-bottom: 4rem;
+	}
+
+	.kontak .kontak1 {
+		flex-wrap: wrap;
+	}
+
+	.kontak .kontak .map {
+		height: 45rem;
+	}
+
+	.kontak .kontak1 form {
+		padding-top: 0;
+	}
+
+}
+
+@media (max-width: 450px) {
+	html {
+		font-size: 55%;
+	}
+
+	}
+}
