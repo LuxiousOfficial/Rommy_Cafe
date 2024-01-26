@@ -292,14 +292,15 @@ body {
 	text-decoration: none;
 	padding: 0.5rem 1rem;
 	background-color: chocolate;
-	border-radius: 0.5rem;
+	border-radius: 1rem;
 	border: 2px solid white;
 	transition: 0.5s;
 }
 
 .menu .menucafe .menu1 a:hover {
-	color: red;
-	border-color: black;
+	color: chocolate;
+	border-color: chocolate;
+	background-color: white;
 }
 
 .ourcontact {
@@ -403,8 +404,8 @@ footer .links {
 }
 
 footer .links a {
-	margin: 0 1rem;
-	font-size: 1.5rem;
+	margin: 0 0.8rem;
+	font-size: 1.4rem;
 	font-weight: bold;
 	text-transform: capitalize;
 	text-decoration: none;
