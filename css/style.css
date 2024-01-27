@@ -210,12 +210,12 @@ body {
 	font-weight: bold;
 	text-align: center;
 	text-transform: capitalize;
-	color: white;
+	color: chocolate;
 	margin-bottom: 4rem;
 }
 
 .menu h2 span {
-	color: chocolate;
+	color: white;
 }
 
 .menu p {
@@ -314,11 +314,11 @@ body {
 	font-weight: bold;
 	text-align: center;
 	text-transform: capitalize;
-	color: white;
+	color: chocolate;
 }
 
 .ourcontact span {
-	color: chocolate;
+	color: white;
 }
 
 .ourcontact .contact {
